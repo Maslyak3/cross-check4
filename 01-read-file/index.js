@@ -10,4 +10,4 @@ readStream.on('data', (chunk) => {
 readStream.on('end', () => {
   console.log(text);
 });
-readStream.on('error', (err) => console.log('Error', error.message));
+readStream.on('error', (error) => console.log('Error', error.message));

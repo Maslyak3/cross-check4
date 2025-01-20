@@ -5,7 +5,7 @@ const dirPath = path.join(__dirname, 'secret-folder');
 fs.readdir(dirPath, { withFileTypes: true }, (err, files) => {
   if (err) throw err;
   stdout.write(
-    `information about files contained directly within 03-files-in-folder/secret-folder:\n`,
+    'information about files contained directly within 03-files-in-folder/secret-folder:\n',
   );
   files.forEach((file) => {
     if (file.isFile()) {
